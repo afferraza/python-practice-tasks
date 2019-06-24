@@ -10,5 +10,72 @@ if 5 > 10:
 else:
     print("5 is less than 10")
 names = ['affer','raza','ali']
+names.append('ahmad')
+names.append('ahmad')
+
+
 for x in names:
     print(x)
+
+a = {1,2,3,4,4,5,5,6}
+print(a)
+
+for i in range(len(names)):
+    print(names[i])
+
+c = list(range(5))
+print(c)
+
+def frange(start, stop, step):
+     i = start
+     while i < stop:
+         yield i
+         i += step
+
+for i in frange(0.5, 1.0, 0.1):
+         print(i)
+
+
+n = "Affer"
+print("Hello, %s!"%n)
+
+print("%d ASDasdfsad"%3)
+
+astring = "Hello world!"
+afewwords = astring.split(" ")
+
+print(afewwords)
+
+count = 0
+while True:
+    print(count)
+    count += 1
+    if count == 3:
+        break
+
+
+for x in range(10):
+    # Check if x is even
+    if x % 2 == 0:
+        continue
+    print(x)
+
+def my_function(username, greeting):
+    print("Hello, %s , From My Function!, I wish you %s"%(username, greeting))
+
+my_function('ARaza',"Gracias")
+
+# Modify this function to return a list of strings as defined above
+def list_benefits():
+    return ["More organized code", "More readable code", "Easier code reuse", "Allowing programmers to share and connect code together"]
+
+# Modify this function to concatenate to each benefit - " is a benefit of functions!"
+def build_sentence(benefit):
+    return benefit + " is a benefit of a functions";
+
+def name_the_benefits_of_functions():
+    list_of_benefits = list_benefits()
+    for benefit in list_of_benefits:
+        print(build_sentence(benefit))
+
+name_the_benefits_of_functions()
