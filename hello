@@ -1,3 +1,14 @@
-print("Hello World");
-print("Hello World");
-
+print("Hello World")
+print(5 * 20)
+print("hi" * 5)
+name = "Nicholas"
+age = 26
+course = "Computer Science"
+print("My name is " + name + ", aged " + str(age) + ", taking " + course)
+if 5 > 10:
+    print("5 is greater than 10")
+else:
+    print("5 is less than 10")
+names = ['affer','raza','ali']
+for x in names:
+    print(x)
