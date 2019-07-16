@@ -3,7 +3,6 @@ Write a Python program to find urls in a string and output all urls as list.
 """
 
 import re
-pattern = re.compile("\([^()]*\)")
 
 pattern = re.compile("https*://[\w.@_!#$%^&*()<>?/\|}{~:\w]*\S")
 

@@ -6,10 +6,9 @@ Sample data : ["example (.com)", "w3resource", "github (.com)", "stackoverflow (
 """
 
 import re
-pattern = re.compile("\([^()]*\)")
 
+pattern = re.compile("\([^()]*\)")
 sample_data = ["example (.com)", "w3resource",
                "github (.com)", "stackoverflow (.com)"]
-
 for data in sample_data:
     print(re.sub(pattern, '', data))
